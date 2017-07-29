@@ -7,7 +7,6 @@ const QRDISPLAY = 'QRDISPLAY',
 			DISCOVER 	= 'DISCOVER',
 			MYSTORES 	= 'MYSTORES'
 
-
 class Customer extends Component {
 	constructor(props){
 		super(props);
@@ -22,15 +21,17 @@ class Customer extends Component {
 
 	renderQRDisplay = () => {
 		return (
-			<QRDisplay 
-				goto={this.goto}
-			/>
-		)		
+			<div>
+				<QRDisplay
+					goto={this.goto}
+				/>
+			</div>
+		)
 	}
 
 	renderDiscover = () => {
 		return(
-			<Discover 
+			<Discover
 				goto={this.goto}
 			/>
 		)
@@ -38,7 +39,7 @@ class Customer extends Component {
 
 	renderMyStores = () => {
 		return (
-			<MyStores 
+			<MyStores
 				goto={this.goto}
 			/>
 		)

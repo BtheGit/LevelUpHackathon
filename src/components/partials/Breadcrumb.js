@@ -1,11 +1,17 @@
 import '../../css/breadcrumb.css';
+import React from 'react';
 
 const Breadcrumb = (props) => {
   return (
     <div className="breadcrumb">
-      if (this.props.canReturn) {
-        <a className="button-back">Back</a>
-      }
+        {props.canReturn &&
+          <a className="button-back"
+            onClick={() => {props.goBack()}}>
+            Back
+          </a>
+        }
     </div>
   )
 }
+
+export default Breadcrumb;

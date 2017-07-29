@@ -32,7 +32,9 @@ class App extends Component {
 
   renderCustomer = () => {
     return (
-      <Customer />
+      <Customer
+        redirect = {this.redirect}
+      />
     )
   }
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Breadcrumb from '../partials/Breadcrumb';
 
 const QRDISPLAY = 'QRDISPLAY',
 			DISCOVER 	= 'DISCOVER',
@@ -15,8 +16,11 @@ class Discover extends Component {
 	render() {
 		return (
 			<div>
+				<Breadcrumb
+					canReturn={true}
+					goBack={() => {this.props.goto(QRDISPLAY)}}
+				/>
 				<div>Discover</div>
-				<div className="back-button" onClick={() => this.props.goto(QRDISPLAY)}>BACK</div>
 			</div>
 		)
 	}
