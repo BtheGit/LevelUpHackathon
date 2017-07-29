@@ -47,7 +47,7 @@ class Customer extends Component {
 
 	render() {
 		return (
-			<div className="Customer-parent">
+			<div className="full-height-parent">
 				{this.state.display === QRDISPLAY ? this.renderQRDisplay()
 						: this.state.display === DISCOVER ? this.renderDiscover()
 						: this.renderMyStores()

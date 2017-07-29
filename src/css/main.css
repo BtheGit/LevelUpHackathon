@@ -1,4 +1,14 @@
 .hidden {
   display: none; }
 
+html, body, #root {
+  height: 100%; }
+  html > div, body > div, #root > div {
+    height: 100%; }
+
+.full-height-parent {
+  height: 100%; }
+  .full-height-parent > div {
+    height: 100%; }
+
 /*# sourceMappingURL=main.css.map */

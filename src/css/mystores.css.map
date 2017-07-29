@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,cAAe;EACb,OAAO,EAAE,IAAI;EACb,UAAU,ECJI,OAAO;;ADOvB,WAAY;EACV,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,GAAG;EAClB,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,IAAI",
+"sources": ["../sass/mystores.scss","../sass/variables.scss"],
+"names": [],
+"file": "mystores.css"
+}
