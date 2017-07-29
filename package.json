@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "load-google-maps-api": "^1.0.0",
     "purecss": "^1.0.0",
     "qrcode.react": "^0.7.1",
     "react": "^15.6.1",
