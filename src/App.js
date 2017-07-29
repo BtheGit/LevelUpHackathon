@@ -17,15 +17,15 @@ class App extends Component {
     }
   }
 
-  switchView = (view) => {
-    this.setState({
-      display: view
-    });
+  redirect = route => {
+    this.setState({display: route})
   }
 
   renderLogin = () => {
     return (
-      <Login switchView={this.switchView}/>
+      <Login 
+        redirect = {this.redirect}
+      />
     )
   }
 
@@ -54,3 +54,5 @@ class App extends Component {
 }
 
 export default App;
+
+
