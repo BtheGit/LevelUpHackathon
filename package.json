@@ -4,9 +4,11 @@
   "private": true,
   "dependencies": {
     "purecss": "^1.0.0",
+    "qrcode.react": "^0.7.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.10"
+    "react-scripts": "1.0.10",
+    "react-svg": "^2.1.21"
   },
   "scripts": {
     "start": "react-scripts start",
