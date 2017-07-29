@@ -1,20 +1,56 @@
 import React, { Component } from 'react';
 import Discover from './customer/Discover';
-import StoreDetail from './customer/StoreDetail';
 import MyStores from './customer/MyStores';
+import QRDisplay from './customer/QRDisplay';
+
+const QRDISPLAY = 'QRDISPLAY',
+			DISCOVER 	= 'DISCOVER',
+			MYSTORES 	= 'MYSTORES'
+
 
 class Customer extends Component {
 	constructor(props){
 		super(props);
 		this.state = {
-
+			display: QRDISPLAY
 		}
+	}
+
+	goto = (page) => {
+		this.setState({display: page})
+	}
+
+	renderQRDisplay = () => {
+		return (
+			<QRDisplay 
+				goto={this.goto}
+			/>
+		)		
+	}
+
+	renderDiscover = () => {
+		return(
+			<Discover 
+				goto={this.goto}
+			/>
+		)
+	}
+
+	renderMyStores = () => {
+		return (
+			<MyStores 
+				goto={this.goto}
+			/>
+		)
 	}
 
 	render() {
 		return (
-			<div>
-				Customer
+			<div className="Customer-parent">
+				{this.state.display === QRDISPLAY ? this.renderQRDisplay()
+						: this.state.display === DISCOVER ? this.renderDiscover()
+						: this.renderMyStores()
+				}
 			</div>
 		)
 	}

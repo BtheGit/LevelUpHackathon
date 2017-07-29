@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 
+const QRDISPLAY = 'QRDISPLAY',
+			DISCOVER 	= 'DISCOVER',
+			MYSTORES 	= 'MYSTORES'
+
 class Discover extends Component {
 	constructor(props){
 		super(props);
@@ -11,7 +15,8 @@ class Discover extends Component {
 	render() {
 		return (
 			<div>
-				Discover
+				<div>Discover</div>
+				<div className="back-button" onClick={() => this.props.goto(QRDISPLAY)}>BACK</div>
 			</div>
 		)
 	}
