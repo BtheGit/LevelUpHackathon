@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Breadcrumb from '../partials/Breadcrumb';
+import ReactSVG from 'react-svg';
 import '../../css/mystores.css';
 
 const QRDISPLAY = 'QRDISPLAY',
@@ -25,6 +26,39 @@ class MyStores extends Component {
 		}
 	}
 
+	makeIconsStamps = (stamps, stampsIcon) => {
+		const stampsCurrent = stamps[0];
+		const stampsMax = stamps[1];
+		let icon = null;
+
+		switch (stampsIcon) {
+			case 'coffee':
+				icon = (<ReactSVG path="/images/stamp_coffee.svg"/>);
+				break;
+			case 'tea':
+				icon = (<ReactSVG path="/images/stamp_tea.svg"/>);
+				break;
+			default :
+				icon = '#';
+		}
+
+		return Array(stampsMax).fill().map((stamp, index) => {
+			if (index >= stampsCurrent) {
+				return (
+					<span key={index} className="stamp-icon empty">
+						{icon}
+					</span>
+				);
+			} else {
+				return (
+					<span key={index} className="stamp-icon">
+						{icon}
+					</span>
+				);
+			}
+		});
+	}
+
 	render() {
 		const storesList = (
 			<ul className="my-stores">
@@ -32,7 +66,10 @@ class MyStores extends Component {
 					return (
 						<li key={index} className="store-card">
 							<p>{listValue.name}</p>
-							<p>{listValue.stamps[0]} / {listValue.stamps[1]}</p>
+							<p className="count-circle">{listValue.stamps[0]} / {listValue.stamps[1]}</p>
+							<div className="icons-stamps">
+								{this.makeIconsStamps(listValue.stamps, listValue.stampIcon)}
+							</div>
 						</li>
 					);
 				})}
@@ -45,7 +82,7 @@ class MyStores extends Component {
 					goBack={() => {this.props.goto(QRDISPLAY)}}
 				/>
 				<div id="mystores-view">
-					<h1>My Stores</h1>
+					<h1>My Rewards</h1>
 					{storesList}
 				</div>
 			</div>

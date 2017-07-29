@@ -10,4 +10,35 @@
   border-radius: 4px;
   padding: 15px;
   margin-bottom: 10px;
+  position: relative;
+  .count-circle {
+    top: -5px;
+    right: -5px;
+    position: absolute;
+    text-align: center;
+    line-height: 30px;
+    background: $color-customer;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 11px;
+    width: 30px;
+    height: 30px;
+  }
+  .icons-stamps {
+    margin-top: 8px;
+    max-width: 85%;
+  }
+  .stamp-icon {
+    display: inline-block;
+    width: 25px;
+    position: relative;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .stamp-icon.empty {
+    opacity: 0.2;
+  }
 }
