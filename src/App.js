@@ -4,6 +4,7 @@ import Customer from './components/Customer'
 import Business from './components/Business'
 import 'purecss';
 import './css/reset.css';
+import './css/main.css';
 
 const LOGIN     = 'LOGIN',
       CUSTOMER  = 'CUSTOMER',
@@ -23,7 +24,7 @@ class App extends Component {
 
   renderLogin = () => {
     return (
-      <Login 
+      <Login
         redirect = {this.redirect}
       />
     )
@@ -54,5 +55,3 @@ class App extends Component {
 }
 
 export default App;
-
-

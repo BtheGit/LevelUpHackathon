@@ -1,8 +1,71 @@
+html, body, #root {
+  height: 100%; }
+  html > div, body > div, #root > div {
+    height: 100%; }
+
+#login-view {
+  text-align: center;
+  height: 100%; }
+  #login-view .pure-button {
+    width: 100%; }
+  #login-view input {
+    width: 100%; }
+
+#customer-box {
+  height: 50%;
+  position: relative;
+  background: #bdf0d7;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+#business-box {
+  height: 50%;
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+#customer-button {
+  border-radius: 50%;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  padding: 25px;
+  background: #2BB673;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto; }
+  #customer-button span {
+    font-size: 14px;
+    color: #fff; }
+
+#business-button {
+  border-radius: 50%;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  padding: 25px;
+  background: #642CB5;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto; }
+  #business-button span {
+    font-size: 14px;
+    color: #fff; }
+
 #login-form {
   margin: 0 20px;
   padding: 15px;
-  background: lightblue;
+  background: #EFF2F4;
   text-align: left;
-  display: block; }
+  display: block;
+  border-radius: 4px; }
 
 /*# sourceMappingURL=login.css.map */
