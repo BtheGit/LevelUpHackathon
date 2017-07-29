@@ -1,0 +1,13 @@
+#store-detail {
+  margin: 50px 25px 50px; }
+  #store-detail img {
+    margin: 20px auto;
+    border-radius: 4px;
+    width: 100%; }
+  #store-detail p {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 15px;
+    color: #555555; }
+
+/*# sourceMappingURL=store-detail.css.map */

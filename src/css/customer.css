@@ -1,6 +1,6 @@
 #qr-container {
   height: 60%;
-  background: #EFF2F4 url("/images/zigzag_bcg.png") bottom center no-repeat; }
+  background: #EFF2F4 url("/images/zigzag_bcg.png") bottom center repeat-x; }
   #qr-container #qr-code {
     width: 200px;
     margin: 0 auto;

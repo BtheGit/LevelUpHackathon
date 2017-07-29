@@ -72,7 +72,7 @@ class MyStores extends Component {
 					storeId= {rew.storeId}
 					storeName= {rew.storeName}
 					storeLogo= {rew.storeLogo}
-					stampIcon= {rew.StampIcon}
+					stampIcon= {rew.stampIcon}
 				/>
 			</div>
 		)

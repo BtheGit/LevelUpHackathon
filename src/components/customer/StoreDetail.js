@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import stores from '../../db/stores_DB';
+import '../../css/store-detail.css';
 
 class StoreDetail extends Component {
 	constructor(props){
@@ -11,11 +12,11 @@ class StoreDetail extends Component {
 	render() {
 		const store = stores[this.props.id]
 		return (
-			<div>
-				<div>{store.name}</div>
+			<div id="store-detail">
+				<h1>{store.name}</h1>
 				<img src={store.img} />
-				<div>{store.desc}</div>
-				<div>Phone: {store.phone}</div>
+				<p>{store.desc}</p>
+				<p>Phone: {store.phone}</p>
 			</div>
 		)
 	}

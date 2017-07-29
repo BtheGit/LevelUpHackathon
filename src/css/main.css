@@ -2,8 +2,7 @@
   display: none; }
 
 html, body, #root {
-  height: 100%;
-  background: #EFF2F4; }
+  height: 100%; }
   html > div, body > div, #root > div {
     height: 100%; }
 

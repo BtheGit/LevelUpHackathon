@@ -1,0 +1,16 @@
+@import './variables.scss';
+
+#store-detail {
+  margin: 50px 25px 50px;
+  img {
+    margin: 20px auto;
+    border-radius: 4px;
+    width: 100%;
+  }
+  p {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 15px;
+    color: $color-grey;
+  }
+}
