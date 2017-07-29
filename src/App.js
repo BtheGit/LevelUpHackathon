@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 import Login from './components/Login'
 import Customer from './components/Customer'
 import Business from './components/Business'
+import 'purecss';
+import './css/reset.css';
 
 const LOGIN     = 'LOGIN',
       CUSTOMER  = 'CUSTOMER',
@@ -17,9 +17,15 @@ class App extends Component {
     }
   }
 
+  switchView = (view) => {
+    this.setState({
+      display: view
+    });
+  }
+
   renderLogin = () => {
     return (
-      <Login />
+      <Login switchView={this.switchView}/>
     )
   }
 

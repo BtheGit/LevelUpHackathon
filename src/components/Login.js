@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../css/login.css';
 
 class Login extends Component {
 	constructor(props){
@@ -10,8 +11,16 @@ class Login extends Component {
 
 	render() {
 		return (
-			<div>
-				Login
+			<div id="login-view">
+				<form id="login-form" className="pure-form">
+					<input type="email" placeholder="Email" />
+					<input type="password" placeholder="Password" />
+					<button
+						className="pure-button pure-button-primary"
+						onClick={() => {this.props.switchView('CUSTOMER')}}>
+						Login
+					</button>
+				</form>
 			</div>
 		)
 	}

@@ -12,6 +12,10 @@ class MyStores extends Component {
 		return (
 			<div>
 				MyStores
+				<div className="store-card">
+					<p>CoCo</p>
+					<p>Free drink</p>
+				</div>
 			</div>
 		)
 	}
