@@ -8,7 +8,11 @@ html, body, #root {
 
 .full-height-parent {
   height: 100%; }
-  .full-height-parent > div {
-    height: 100%; }
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: light;
+  color: #555555; }
 
 /*# sourceMappingURL=main.css.map */

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Discover from './customer/Discover';
 import MyStores from './customer/MyStores';
 import QRDisplay from './customer/QRDisplay';
+import '../css/customer.css';
 
 const QRDISPLAY = 'QRDISPLAY',
 			DISCOVER 	= 'DISCOVER',
@@ -21,11 +22,9 @@ class Customer extends Component {
 
 	renderQRDisplay = () => {
 		return (
-			<div>
-				<QRDisplay
-					goto={this.goto}
-				/>
-			</div>
+			<QRDisplay
+				goto={this.goto}
+			/>
 		)
 	}
 

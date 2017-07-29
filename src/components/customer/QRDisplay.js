@@ -14,13 +14,17 @@ class QRDisplay extends Component {
 
 	render() {
 		return (
-			<div className="QRDisplay-container">
-				<div className="QR-container">
-					<div className="QR-code">QR CODE</div>
+			<div id="customer-view" className="full-height-parent">
+				<div id="qr-container">
+					<div id="qr-code">QR CODE</div>
 				</div>
-				<div className="Discover-link" onClick={() => this.props.goto(DISCOVER)}>DISC</div>
-				<div className="MyStores-link" onClick={() => this.props.goto(MYSTORES)}>STORES</div>
-			</div>			
+				<a id="button-discover" className="button-circle" onClick={() => this.props.goto(DISCOVER)}>
+					<span>Discover</span>
+				</a>
+				<a id="button-mystores" className="button-circle" onClick={() => this.props.goto(MYSTORES)}>
+					<span>My Stores</span>
+				</a>
+			</div>
 		)
 	}
 }

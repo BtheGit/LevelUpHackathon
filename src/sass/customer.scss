@@ -1,0 +1,40 @@
+@import './variables.scss';
+
+#qr-container {
+  height: 60%;
+  background: $color-primary url('/images/zigzag_bcg.png') bottom center no-repeat;
+  #qr-code {
+    width: 200px;
+    background: $color-customer;
+    height: 200px;
+    position: relative;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+  }
+}
+
+#customer-view {
+  .button-circle {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    bottom: 60px;
+    display: block;
+    position: absolute;
+    span {
+      display: none;
+    }
+  }
+
+  #button-discover {
+    background: #EF4136;
+    left: 35px;
+  }
+
+  #button-mystores {
+    background: #FBB040;
+    right: 35px;
+  }
+}

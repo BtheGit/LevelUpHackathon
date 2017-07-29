@@ -46,7 +46,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="full-height-parent">
         { this.state.display === LOGIN ? this.renderLogin()
           : this.state.display === CUSTOMER ? this.renderCustomer()
           : this.renderBusiness()
