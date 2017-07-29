@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import StoreDetail from './StoreDetail';
 import Breadcrumb from '../partials/Breadcrumb';
+import IconStamps from '../partials/IconStamps';
+import '../../css/reward-detail.css';
 
 const REWARD = 'REWARD',
 			STORE  = 'STORE'
@@ -15,16 +17,15 @@ class RewardDetail extends Component {
 
 	renderReward = () => {
 		return (
-			<div>
-				<div>RewardDetail</div>
-				<div>IMAGE: {this.props.rewardURL}</div>
-				<div>Type: {this.props.reward}</div>
-				<div>Earned: {this.props.earned}</div>
-				<div>Required: {this.props.required}</div>
-				<div>Store: {this.props.storeName}</div>
-				<div>Store Logo: {this.props.storeLogo}</div>
-				<div>Stamp Icon: {this.props.stampIcon}</div>
-				<div onClick={() => this.setState({display: STORE})}>LINKTOSTORE</div>
+			<div id="reward-detail" className="full-height-parent">
+				<img src={'/images/' + this.props.storeLogo} className="profile" />
+				<h1>{this.props.reward}</h1>
+				<p>{this.props.storeName}</p>
+				<div id="stamps-wrapper">
+					<p>{this.props.earned} / {this.props.required}</p>
+					<IconStamps stamps={[this.props.earned, this.props.required]} stampsIcon={this.props.stampIcon} />
+				</div>
+				<div onClick={() => this.setState({display: STORE})} className="pure-button pure-button-primary">Store</div>
 			</div>
 		)
 	}

@@ -8,6 +8,16 @@
   padding: 15px;
   margin-bottom: 10px;
   position: relative; }
+  .store-card .thumbnail {
+    width: 25px;
+    margin-bottom: 10px; }
+  .store-card .small {
+    font-size: 11px;
+    margin-top: 5px;
+    color: #7b7b7b; }
+  .store-card img {
+    float: left;
+    margin-right: 5px; }
   .store-card .count-circle {
     top: -5px;
     right: -5px;

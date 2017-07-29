@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Breadcrumb from '../partials/Breadcrumb';
+import IconStamps from '../partials/IconStamps';
 import RewardDetail from './RewardDetail';
-import ReactSVG from 'react-svg';
 import '../../css/mystores.css';
 
 const QRDISPLAY = 'QRDISPLAY',
@@ -24,7 +24,7 @@ class MyStores extends Component {
 					required: 6,
 					storeId: '1',
 					storeName: 'NORMA Coffee',
-					storeLogo: 'IMG',
+					storeLogo: 'norma.jpg',
 					stampIcon: 'coffee'
 				},
 				{
@@ -34,9 +34,9 @@ class MyStores extends Component {
 					earned: 1,
 					required: 9,
 					storeId: '2',
-					storeName: 'Brendan\'s Pizza',
-					storeLogo: 'IMG',
-					stampIcon: 'pizza'				
+					storeName: 'PizzaHut',
+					storeLogo: 'pizzahut.jpg',
+					stampIcon: 'pizza'
 				}
 			]
 		}
@@ -50,7 +50,7 @@ class MyStores extends Component {
 
 	gotoReward = reward => {
 		this.setState({
-			display: REWARD, 
+			display: REWARD,
 			activeReward: reward
 		})
 	}
@@ -72,43 +72,10 @@ class MyStores extends Component {
 					storeId= {rew.storeId}
 					storeName= {rew.storeName}
 					storeLogo= {rew.storeLogo}
-					stampIcon= {rew.StampIcon}					
+					stampIcon= {rew.StampIcon}
 				/>
 			</div>
 		)
-	}
-
-	makeIconsStamps = (stamps, stampsIcon) => {
-		const stampsCurrent = stamps[0];
-		const stampsMax = stamps[1];
-		let icon = null;
-
-		switch (stampsIcon) {
-			case 'coffee':
-				icon = (<ReactSVG path="/images/stamp_coffee.svg"/>);
-				break;
-			case 'tea':
-				icon = (<ReactSVG path="/images/stamp_tea.svg"/>);
-				break;
-			default :
-				icon = '#';
-		}
-
-		return Array(stampsMax).fill().map((stamp, index) => {
-			if (index >= stampsCurrent) {
-				return (
-					<span key={index} className="stamp-icon empty">
-						{icon}
-					</span>
-				);
-			} else {
-				return (
-					<span key={index} className="stamp-icon">
-						{icon}
-					</span>
-				);
-			}
-		});
 	}
 
 	renderMyStores() {
@@ -117,13 +84,12 @@ class MyStores extends Component {
 				{this.state.rewards.map((listValue, index) => {
 					return (
 						<li key={index} className="store-card" onClick={() => this.gotoReward(listValue)}>
-							<p>{listValue.name}</p>
-							<div>{listValue.storeLogo}</div>
+							<img src={'/images/' + listValue.storeLogo} className="thumbnail" />
 							<h2>{listValue.reward}</h2>
-							<p>{listValue.storeName}</p>
+							<p className="small">{listValue.storeName}</p>
 							<p className="count-circle">{listValue.earned} / {listValue.required}</p>
 							<div className="icons-stamps">
-								{this.makeIconsStamps([listValue.earned, listValue.required], listValue.stampIcon)}
+								<IconStamps stamps={[listValue.earned, listValue.required]} stampsIcon={listValue.stampIcon} />
 							</div>
 						</li>
 					);
@@ -146,8 +112,8 @@ class MyStores extends Component {
 	}
 
 	render() {
-		return(
-			<div>
+		return (
+			<div className="full-height-parent">
 			{this.state.display === MYSTORES ? this.renderMyStores() : this.renderRewardDetail()}
 			</div>
 		)

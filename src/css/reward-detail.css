@@ -1,0 +1,14 @@
+#reward-detail {
+  padding: 0 25px 50px;
+  background: #EFF2F4; }
+  #reward-detail img.profile {
+    margin: 20px auto;
+    border-radius: 4px;
+    width: 100%; }
+  #reward-detail #stamps-wrapper {
+    margin: 15px 0;
+    background: #fff;
+    padding: 15px;
+    border-radius: 4px; }
+
+/*# sourceMappingURL=reward-detail.css.map */

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Breadcrumb from '../partials/Breadcrumb';
+import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 
 const QRDISPLAY = 'QRDISPLAY',
 			DISCOVER 	= 'DISCOVER',

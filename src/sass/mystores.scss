@@ -11,6 +11,19 @@
   padding: 15px;
   margin-bottom: 10px;
   position: relative;
+  .thumbnail {
+    width: 25px;
+    margin-bottom: 10px;
+  }
+  .small {
+    font-size: 11px;
+    margin-top: 5px;
+    color: lighten($color-grey, 15%);
+  }
+  img {
+    float: left;
+    margin-right: 5px;
+  }
   .count-circle {
     top: -5px;
     right: -5px;

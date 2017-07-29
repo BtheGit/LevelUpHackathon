@@ -1,0 +1,18 @@
+@import './variables.scss';
+
+#reward-detail {
+  padding: 0 25px 50px;
+  background: $color-primary;
+  img.profile {
+    margin: 20px auto;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  #stamps-wrapper {
+    margin: 15px 0;
+    background: #fff;
+    padding: 15px;
+    border-radius: 4px;
+  }
+}
