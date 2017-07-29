@@ -3,13 +3,19 @@
   background: #EFF2F4 url("/images/zigzag_bcg.png") bottom center no-repeat; }
   #qr-container #qr-code {
     width: 200px;
+    margin: 0 auto;
     background: #2BB673;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     height: 200px;
     position: relative;
-    border-radius: 10px;
-    top: 50%;
-    left: 50%;
-    margin-left: -100px; }
+    border-radius: 50%;
+    padding: 15px;
+    top: 50%; }
+    #qr-container #qr-code canvas {
+      margin: 0 auto; }
 
 #customer-view .button-circle {
   border-radius: 50%;
@@ -21,10 +27,12 @@
   #customer-view .button-circle span {
     display: none; }
 #customer-view #button-discover {
-  background: #EF4136;
   left: 35px; }
+  #customer-view #button-discover svg {
+    fill: #EF4136; }
 #customer-view #button-mystores {
-  background: #FBB040;
   right: 35px; }
+  #customer-view #button-mystores svg {
+    fill: #FBB040; }
 
 /*# sourceMappingURL=customer.css.map */

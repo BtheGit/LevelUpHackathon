@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Breadcrumb from '../partials/Breadcrumb';
 import RewardDetail from './RewardDetail';
+import ReactSVG from 'react-svg';
 import '../../css/mystores.css';
 
 const QRDISPLAY = 'QRDISPLAY',
@@ -40,7 +41,6 @@ class MyStores extends Component {
 			]
 		}
 	}
-
 	returnHere = () => {
 		this.setState({
 			display: MYSTORES,
@@ -78,17 +78,53 @@ class MyStores extends Component {
 		)
 	}
 
-	renderMyStores = () => {
+	makeIconsStamps = (stamps, stampsIcon) => {
+		const stampsCurrent = stamps[0];
+		const stampsMax = stamps[1];
+		let icon = null;
+
+		switch (stampsIcon) {
+			case 'coffee':
+				icon = (<ReactSVG path="/images/stamp_coffee.svg"/>);
+				break;
+			case 'tea':
+				icon = (<ReactSVG path="/images/stamp_tea.svg"/>);
+				break;
+			default :
+				icon = '#';
+		}
+
+		return Array(stampsMax).fill().map((stamp, index) => {
+			if (index >= stampsCurrent) {
+				return (
+					<span key={index} className="stamp-icon empty">
+						{icon}
+					</span>
+				);
+			} else {
+				return (
+					<span key={index} className="stamp-icon">
+						{icon}
+					</span>
+				);
+			}
+		});
+	}
+
+	renderMyStores() {
 		const storesList = (
 			<ul className="my-stores">
 				{this.state.rewards.map((listValue, index) => {
 					return (
 						<li key={index} className="store-card" onClick={() => this.gotoReward(listValue)}>
-
+							<p>{listValue.name}</p>
 							<div>{listValue.storeLogo}</div>
 							<h2>{listValue.reward}</h2>
 							<p>{listValue.storeName}</p>
-							<p>{listValue.earned} / {listValue.required}</p>
+							<p className="count-circle">{listValue.earned} / {listValue.required}</p>
+							<div className="icons-stamps">
+								{this.makeIconsStamps([listValue.earned, listValue.required], listValue.stampIcon)}
+							</div>
 						</li>
 					);
 				})}
@@ -102,7 +138,7 @@ class MyStores extends Component {
 					goBack={() => {this.props.goto(QRDISPLAY)}}
 				/>
 				<div id="mystores-view">
-					<h1>My Stores</h1>
+					<h1>My Rewards</h1>
 					{storesList}
 				</div>
 			</div>

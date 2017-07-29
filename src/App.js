@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Login from './components/Login'
-import Customer from './components/Customer'
-import Business from './components/Business'
+import Login from './components/Login';
+import Customer from './components/Customer';
+import Business from './components/Business';
 import 'purecss';
 import './css/reset.css';
 import './css/main.css';

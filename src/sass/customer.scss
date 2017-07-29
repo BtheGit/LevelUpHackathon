@@ -5,13 +5,20 @@
   background: $color-primary url('/images/zigzag_bcg.png') bottom center no-repeat;
   #qr-code {
     width: 200px;
+    margin: 0 auto;
     background: $color-customer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     height: 200px;
     position: relative;
-    border-radius: 10px;
+    border-radius: 50%;
+    padding: 15px;
     top: 50%;
-    left: 50%;
-    margin-left: -100px;
+    canvas {
+      margin: 0 auto;
+    }
   }
 }
 
@@ -29,12 +36,18 @@
   }
 
   #button-discover {
-    background: #EF4136;
+    // background: #EF4136;
     left: 35px;
+    svg {
+      fill: #EF4136;
+    }
   }
 
   #button-mystores {
-    background: #FBB040;
+    // background: #FBB040;
     right: 35px;
+    svg {
+      fill: #FBB040;
+    }
   }
 }
