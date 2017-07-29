@@ -17,9 +17,16 @@ class App extends Component {
     }
   }
 
+  redirect = route => {
+    console.log('route', route)
+    this.setState({display: route})
+  }
+
   renderLogin = () => {
     return (
-      <Login />
+      <Login 
+        redirect = {this.redirect}
+      />
     )
   }
 
@@ -48,3 +55,5 @@ class App extends Component {
 }
 
 export default App;
+
+
