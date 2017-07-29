@@ -11,59 +11,47 @@ html, body, #root {
   #login-view input {
     width: 100%; }
 
+.login-box {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative; }
+
 #customer-box {
   height: 50%;
-  position: relative;
-  background: #bdf0d7;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column; }
+  padding-bottom: 10%;
+  background: #bdf0d7 url("/images/zigzag_bcg.png") bottom center no-repeat; }
 
 #business-box {
-  height: 50%;
-  position: relative;
-  background: #fff;
+  height: 40%;
+  margin-top: -10%;
+  background: #fff; }
+
+.login-circle-button {
+  border-radius: 50%;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  padding: 25px;
+  text-align: center;
   display: flex;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 0 auto; }
+  .login-circle-button span {
+    font-size: 14px;
+    color: #fff; }
 
 #customer-button {
-  border-radius: 50%;
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  padding: 25px;
-  background: #2BB673;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 auto; }
-  #customer-button span {
-    font-size: 14px;
-    color: #fff; }
+  background: #2BB673; }
 
 #business-button {
-  border-radius: 50%;
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  padding: 25px;
-  background: #642CB5;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 auto; }
-  #business-button span {
-    font-size: 14px;
-    color: #fff; }
+  background: #642CB5; }
 
-#login-form {
-  margin: 0 20px;
-  padding: 15px;
-  background: #EFF2F4;
+.login-form {
+  margin: 0 45px;
+  padding: 25px;
   text-align: left;
   display: block;
   border-radius: 4px; }
