@@ -2,6 +2,7 @@
   "name": "level-up",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://github.com/BtheGit/LevelUpHackathonDemo/",
   "dependencies": {
     "load-google-maps-api": "^1.0.0",
     "purecss": "^1.0.0",
