@@ -37,33 +37,36 @@ class MyStores extends Component {
 
 
 	renderCustomers() {
-		const storesList = (
-			<ul className="customers">
-				{this.state.customers.map((listValue, index) => {
-					return (
-						<li key={index} className="customer-card">
-							<img src={'/images/' + listValue.storeLogo} className="thumbnail" />
-							<h2>{listValue.reward}</h2>
-							<p className="small">{listValue.storeName}</p>
-							<p className="count-circle">{listValue.earned} / {listValue.required}</p>
-							<div className="icons-stamps">
-								<IconStamps stamps={[listValue.earned, listValue.required]} stampsIcon={listValue.stampIcon} />
-							</div>
-						</li>
-					);
-				})}
-			</ul>
-		)
-
 		return (
 			<div>
 				<Breadcrumb
 					canReturn={true}
 					goBack={() => {this.props.goto(QRSCANNER)}}
 				/>
-				<div id="customers-view">
+				<div id="customers-view" className="view">
 					<h1>Customers</h1>
-					{storesList}
+					<table className="pure-table">
+						<thead>
+							<tr>
+								<td>Customer</td>
+								<td>Loyalty Index</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Eddie A.</td>
+								<td>15</td>
+							</tr>
+							<tr>
+								<td>Brendan B.</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>Howard C.</td>
+								<td>4</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		)

@@ -29,13 +29,13 @@ const stores = {
 		img: 'http://www.coco-tea.com/images/News_Content/2017event/CoCoTW20170214_3%E6%9C%88%E4%BF%83%E9%8A%B7_FB_1000x1000px.jpg',
 		logo: 'P_coco.png',
 		phone: '87-689-7122',
-		desc: `The three founders managed CoCo with professional, quality-oriented and innovative 
-		ideals based on the concepts of "Consistency and Continuity." With the foundation of 
-		founding traditions, bold innovations and international perspective, we built up 
+		desc: `The three founders managed CoCo with professional, quality-oriented and innovative
+		ideals based on the concepts of "Consistency and Continuity." With the foundation of
+		founding traditions, bold innovations and international perspective, we built up
 		our corporate spirit of "embrace tradition, unleash innovation, seize the world,
-		" thus successfully expanding our business into China, Hong Kong, Southeast Asia 
-		and the United States. Based on our Standard Operating Procedure, rigorous internal 
-		training, tasty drinks and high quality services, CoCo has become a leading brand 
+		" thus successfully expanding our business into China, Hong Kong, Southeast Asia
+		and the United States. Based on our Standard Operating Procedure, rigorous internal
+		training, tasty drinks and high quality services, CoCo has become a leading brand
 		in the freshly-made drinks industry..`
 	},
 	'4': {
@@ -43,10 +43,10 @@ const stores = {
 		img: 'http://images4.fanpop.com/image/photos/18800000/Starbucks-coffee-18820575-500-376.jpg',
 		logo: 'starbucks.jpg',
 		phone: '24-7122-1337',
-		desc: `In Starbucks shops customer are enjoying the unique experience of feeling 
-		which they call a third place where they can relax between their journeys from 
-		home to the work. Starbucks aim to provide customer satisfaction to provide uniqueness 
-		of enjoying Starbucks coffee experience. In Starbucks shops the environment is really 
+		desc: `In Starbucks shops customer are enjoying the unique experience of feeling
+		which they call a third place where they can relax between their journeys from
+		home to the work. Starbucks aim to provide customer satisfaction to provide uniqueness
+		of enjoying Starbucks coffee experience. In Starbucks shops the environment is really
 		comfortable, relax, access the wi fi, listen your favourite music and no smoking.`
 	},
 	'5': {
@@ -55,14 +55,14 @@ const stores = {
 		logo:'KFC.svg.png',
 		phone: '77-3824-1997',
 		desc: `KFC was one of the first American fast food chains to expand internationally,
-		opening outlets in Canada, the United Kingdom, Mexico, and Jamaica by the mid-1960s. 
-		Throughout the 1970s and 1980s, it experienced mixed fortunes domestically, as it went 
-		through a series of changes in corporate ownership with little or no experience in the 
+		opening outlets in Canada, the United Kingdom, Mexico, and Jamaica by the mid-1960s.
+		Throughout the 1970s and 1980s, it experienced mixed fortunes domestically, as it went
+		through a series of changes in corporate ownership with little or no experience in the
 		restaurant business. In the early 1970s, KFC was sold to the spirits distributor Heublein,
-		which was taken over by the R.J. Reynolds food and tobacco conglomerate; that company sold 
-		the chain to PepsiCo. The chain continued to expand overseas, however, and in 1987, 
-		it became the first Western restaurant chain to open in China. It has since expanded 
-		rapidly in China, which is now the company's single largest market. PepsiCo spun off 
+		which was taken over by the R.J. Reynolds food and tobacco conglomerate; that company sold
+		the chain to PepsiCo. The chain continued to expand overseas, however, and in 1987,
+		it became the first Western restaurant chain to open in China. It has since expanded
+		rapidly in China, which is now the company's single largest market. PepsiCo spun off
 		its restaurants division as Tricon Global Restaurants, which later changed its name to Yum! Brands.`
 	}
 }

@@ -20,6 +20,7 @@ class MyStores extends Component {
 					rewardId: '12312312312312',
 					rewardURL: 'https://pic.pimg.tw/sistravel2/1459343488-3371783602_n.jpg?v=1459343631',
 					reward: 'Free Medium Cup of Coffee',
+					rewardImage: 'reward_coffee.JPEG',
 					earned: 4,
 					required: 6,
 					storeId: '1',
@@ -101,6 +102,7 @@ class MyStores extends Component {
 				<RewardDetail
 					rewardId= {rew.rewardId}
 					rewardURL= {rew.rewardURL}
+					rewardImage= {rew.rewardImage}
 					reward= {rew.reward}
 					earned= {rew.earned}
 					required= {rew.required}

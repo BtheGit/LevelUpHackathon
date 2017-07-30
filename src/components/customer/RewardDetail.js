@@ -21,7 +21,12 @@ class RewardDetail extends Component {
 	renderReward = () => {
 		return (
 			<div id="reward-detail" className="full-height-parent">
-				<img src={'/images/' + this.props.storeLogo} className="profile" />
+				{this.props.rewardImage ? (
+						<img src={'/images/' + this.props.rewardImage} className="profile" />
+					) : (
+						<img src={'/images/' + this.props.storeLogo} className="profile" />
+					)
+				}
 				<h1>{this.props.reward}</h1>
 				<p>{this.props.storeName}</p>
 				<div id="stamps-wrapper">

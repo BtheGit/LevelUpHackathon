@@ -18,4 +18,50 @@ h1 {
 .pure-button-primary {
   background: #f1824d; }
 
+.view {
+  padding: 25px;
+  background: #eef2f5; }
+
+.generic-card {
+  background: #fff;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 10px;
+  position: relative; }
+  .generic-card .thumbnail {
+    width: 25px;
+    margin-bottom: 10px; }
+  .generic-card .small {
+    font-size: 11px;
+    margin-top: 5px;
+    color: #7b7b7b; }
+  .generic-card img {
+    float: left;
+    margin-right: 5px; }
+  .generic-card .count-circle {
+    bottom: 7px;
+    right: 7px;
+    position: absolute;
+    text-align: center;
+    line-height: 30px;
+    background: #f1824d;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px;
+    font-size: 11px;
+    width: 30px;
+    height: 30px; }
+  .generic-card .icons-stamps {
+    margin-top: 8px;
+    max-width: 85%; }
+  .generic-card .stamp-icon {
+    display: inline-block;
+    width: 25px;
+    position: relative; }
+    .generic-card .stamp-icon svg {
+      width: 100%;
+      height: 100%; }
+  .generic-card .stamp-icon.empty {
+    opacity: 0.2; }
+
 /*# sourceMappingURL=main.css.map */
