@@ -41,7 +41,7 @@ class Login extends Component {
 
 				<div id="business-box" className="login-box">
 					<a id="business-button" className="login-circle-button"
-						onClick = {() => { this.toggle('business') }}>
+						onClick = {() => { this.props.redirect('BUSINESS') }}>
 						<span>Business</span>
 					</a>
 				</div>
