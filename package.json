@@ -2,7 +2,7 @@
   "name": "level-up",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/BtheGit/LevelUpHackathon/",
+  "homepage": "https://level-up-hackathon.herokuapp.com/",
   "dependencies": {
     "gh-pages": "^1.0.0",
     "load-google-maps-api": "^1.0.0",
