@@ -2,8 +2,9 @@
   "name": "level-up",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://github.com/BtheGit/LevelUpHackathonDemo/",
+  "homepage": "https://github.com/BtheGit/LevelUpHackathon/",
   "dependencies": {
+    "gh-pages": "^1.0.0",
     "load-google-maps-api": "^1.0.0",
     "purecss": "^1.0.0",
     "qrcode.react": "^0.7.1",
@@ -14,6 +15,8 @@
     "react-svg": "^2.1.21"
   },
   "scripts": {
+    "predeploy": "npm run build",
+     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
