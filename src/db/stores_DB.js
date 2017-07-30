@@ -2,7 +2,7 @@ const stores = {
 	'1': {
 		name: 'NORMA Coffee',
 		img: 'http://pic.gomaji.com/products/428/129428/129428_1_r.jpg',
-		logo: 'norma.jpg',
+		logo: 'norma.svg',
 		phone: '54-123-5435',
 		desc: `Rufous is a coffee shop with a rustic feel and a local crowd.
 						It feels like the kind of place worth visiting every day.

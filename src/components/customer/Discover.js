@@ -50,15 +50,17 @@ class Discover extends Component {
     .then(() => {
     	this.buildMarkers();
     })
-				
+
 	}
 
-  
+
 	render() {
 		const mapStyle = {
 			top: 0,
 			left: 0,
-			width: '450px',
+			right: 0,
+			bottom: 0,
+			width: 'auto',
 			height: '700px'
 		}
 		return (

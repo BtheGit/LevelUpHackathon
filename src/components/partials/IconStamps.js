@@ -16,6 +16,9 @@ const IconStamps = (props) => {
 			case 'tea':
 				icon = (<ReactSVG path="/images/stamp_tea.svg"/>);
 				break;
+			case 'pizza':
+				icon = (<ReactSVG path="/images/stamp_pizza.svg"/>);
+				break;
 			default :
 				icon = '#';
 		}

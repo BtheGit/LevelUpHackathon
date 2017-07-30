@@ -19,6 +19,9 @@ class Login extends Component {
 	render() {
 		return (
 			<div id="login-view">
+				<div id="logo">
+					<img src="/images/logo.svg" />
+				</div>
 
 				<div id="customer-box" className="login-box">
 					<a id="customer-button" className={'login-circle-button ' + (this.state.customerForm ? 'hidden' : '')}

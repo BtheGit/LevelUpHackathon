@@ -9,7 +9,18 @@
   input {
     width: 100%;
   }
+  #logo {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    img {
+      width: 100%;
+    }
+  }
 }
+
 
 .login-box {
   text-align: center;
@@ -20,6 +31,7 @@
 }
 
 #customer-box {
+  padding-top: 60px;
   height: 50%;
   padding-bottom: 10%;
   background: lighten($color-customer, 40%) url('/images/zigzag_bcg.png') bottom center no-repeat;
