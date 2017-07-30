@@ -43,5 +43,8 @@
       height: 100%; }
   .store-card .stamp-icon.empty {
     opacity: 0.2; }
-
+  .Brand_Logo{
+    width: 32px;
+    height: 32px; 
+  }
 /*# sourceMappingURL=mystores.css.map */
