@@ -18,7 +18,7 @@ class MyStores extends Component {
 			rewards: [
 				{
 					rewardId: '12312312312312',
-					rewardURL: '',
+					rewardURL: 'https://pic.pimg.tw/sistravel2/1459343488-3371783602_n.jpg?v=1459343631',
 					reward: 'Free Medium Cup of Coffee',
 					earned: 4,
 					required: 6,
@@ -29,7 +29,7 @@ class MyStores extends Component {
 				},
 				{
 					rewardId: '24523453434534',
-					rewardURL: '',
+					rewardURL: 'https://pbs.twimg.com/profile_images/875379306343550976/thFcdklE.jpg',
 					reward: 'Free Slice of Pizza',
 					earned: 1,
 					required: 9,
@@ -37,6 +37,39 @@ class MyStores extends Component {
 					storeName: 'PizzaHut',
 					storeLogo: 'pizzahut.jpg',
 					stampIcon: 'pizza'
+				},
+				{
+					rewardId: '88888888888888',
+					rewardURL: 'http://twcoupon.com/images/logo/p_COCO.png',
+					reward: 'Free Medium Cup of Tea',
+					earned: 3,
+					required: 8,
+					storeId: '3',
+					storeName: 'Coco',
+					storeLogo: 'p_COCO.png ',
+					stampIcon: 'tea'
+				},
+				{
+					rewardId: '77777777777777',
+					rewardURL: 'http://twcoupon.com/images/logo/p_COCO.png',
+					reward: 'Free Medium Cup of Coffee',
+					earned: 6,
+					required: 7,
+					storeId: '4',
+					storeName: 'Starbuck',
+					storeLogo: 'starbucks.jpg',
+					stampIcon: 'coffee'
+				},
+				{
+					rewardId: '99999999999999',
+					rewardURL: 'https://upload.wikimedia.org/wikipedia/zh/thumb/1/18/KFC.svg/1024px-KFC.svg.png',
+					reward: 'Free Chicken Hamburger',
+					earned: 2,
+					required: 5,
+					storeId: '5',
+					storeName: 'KFC',
+					storeLogo: 'KFC.svg.png',
+					stampIcon: 'hamburger'
 				}
 			]
 		}
@@ -72,7 +105,7 @@ class MyStores extends Component {
 					storeId= {rew.storeId}
 					storeName= {rew.storeName}
 					storeLogo= {rew.storeLogo}
-					stampIcon= {rew.stampIcon}
+					stampIcon= {rew.stampIcon}					
 				/>
 			</div>
 		)

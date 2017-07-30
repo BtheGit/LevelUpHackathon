@@ -25,7 +25,7 @@ class Discover extends Component {
       center: mapDB.startLocation,
       zoom: mapDB.zoomLevel,
       mapTypeControl: false,
-      styles: mapDB.styles['brendan']
+      styles: mapDB.styles['grayscaleLight']
     });
 	}
 

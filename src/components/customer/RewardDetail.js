@@ -3,6 +3,9 @@ import StoreDetail from './StoreDetail';
 import Breadcrumb from '../partials/Breadcrumb';
 import IconStamps from '../partials/IconStamps';
 import '../../css/reward-detail.css';
+import MyStores from './MyStores'
+import ReactSVG from 'react-svg';
+import '../../css/rewarddetail.css'
 
 const REWARD = 'REWARD',
 			STORE  = 'STORE'
@@ -14,6 +17,41 @@ class RewardDetail extends Component {
 			display: REWARD,
 		}
 	}
+
+	makeIconsStamps = (stamps, stampsIcon) => {
+		const stampsCurrent = stamps[0];
+		const stampsMax = stamps[1];
+		let icon = null;
+
+		switch (stampsIcon) {
+			case 'coffee':
+				icon = (<ReactSVG path="/images/stamp_coffee.svg"/>);
+				break;
+			case 'tea':
+				icon = (<ReactSVG path="/images/stamp_tea.svg"/>);
+				break;
+			default :
+				icon = '#';
+		}
+
+		return Array(stampsMax).fill().map((stamp, index) => {
+			if (index >= stampsCurrent) {
+				return (
+					<span key={index} className="stamp-icon empty">
+						{icon}
+					</span>
+				);
+			} else {
+				return (
+					<span key={index} className="stamp-icon">
+						{icon}
+					</span>
+				);
+			}
+		});
+	}
+
+
 
 	renderReward = () => {
 		return (
