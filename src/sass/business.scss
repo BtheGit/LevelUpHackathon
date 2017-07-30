@@ -1,0 +1,55 @@
+@import './variables.scss';
+
+#qr-container {
+  height: 60%;
+  background: $color-primary url('/images/zigzag_bcg.png') bottom center repeat-x;
+  #qr-scanner {
+    width: 200px;
+    margin: 0 auto;
+    background: $color-customer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    position: relative;
+    top: 50%;
+    overflow: hidden;
+    img {
+      width: auto;
+      position: absolute;
+      left: -300px;
+      top: -245px;
+    }
+  }
+}
+
+#business-view {
+  .button-circle {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    bottom: 60px;
+    display: block;
+    position: absolute;
+    span {
+      display: none;
+    }
+  }
+
+  #button-customers {
+    // background: #EF4136;
+    left: 35px;
+    svg {
+      fill: #EF4136;
+    }
+  }
+
+  #button-stores {
+    // background: #FBB040;
+    right: 35px;
+    svg {
+      fill: #FBB040;
+    }
+  }
+}

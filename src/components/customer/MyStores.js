@@ -25,6 +25,7 @@ class MyStores extends Component {
 					storeId: '1',
 					storeName: 'NORMA Coffee',
 					storeLogo: 'norma.jpg',
+					rewardPic: 'norma.jpg',
 					stampIcon: 'coffee'
 				},
 				{
@@ -36,6 +37,7 @@ class MyStores extends Component {
 					storeId: '2',
 					storeName: 'PizzaHut',
 					storeLogo: 'pizzahut.jpg',
+					rewardPic: 'pizzahut.jpg',
 					stampIcon: 'pizza'
 				},
 				{
@@ -105,7 +107,7 @@ class MyStores extends Component {
 					storeId= {rew.storeId}
 					storeName= {rew.storeName}
 					storeLogo= {rew.storeLogo}
-					stampIcon= {rew.stampIcon}					
+					stampIcon= {rew.stampIcon}
 				/>
 			</div>
 		)

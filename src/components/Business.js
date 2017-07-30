@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import QRScanner from './business/QRScanner';
 import Stores from './business/Stores';
 import Customers from './business/Customers';
-
+import '../css/business.css';
 
 const QRSCANNER = 'QRSCANNER',
 			STORES 	= 'STORES',
@@ -18,11 +18,11 @@ class Business extends Component {
 
 	goto = (page) => {
 		this.setState({display: page})
-	}	
+	}
 
 	renderQRScanner = () => {
 		return (
-			<QRScanner 
+			<QRScanner
 				goto={this.goto}
 			/>
 		)
@@ -46,11 +46,11 @@ class Business extends Component {
 
 	render() {
 		return (
-			<div className="full-height-parent">			
+			<div className="full-height-parent">
 				{this.state.display === QRSCANNER ? this.renderQRScanner()
 						: this.state.display === STORES ? this.renderStores()
 						: this.renderCustomers()
-				}				
+				}
 			</div>
 		)
 	}
