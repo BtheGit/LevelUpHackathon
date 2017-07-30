@@ -2,7 +2,7 @@
 
 #mystores-view {
   padding: 25px;
-  background: $color-primary;
+  background: $color-bcg;
 }
 
 .store-card {
@@ -25,15 +25,15 @@
     margin-right: 5px;
   }
   .count-circle {
-    top: -5px;
-    right: -5px;
+    bottom: 7px;
+    right: 7px;
     position: absolute;
     text-align: center;
     line-height: 30px;
-    background: $color-customer;
+    background: $color-primary;
     color: #fff;
     border-radius: 50%;
-    padding: 5px;
+    padding: 2px;
     font-size: 11px;
     width: 30px;
     height: 30px;

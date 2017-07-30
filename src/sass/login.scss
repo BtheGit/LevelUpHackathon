@@ -34,7 +34,7 @@
   padding-top: 60px;
   height: 50%;
   padding-bottom: 10%;
-  background: lighten($color-customer, 40%) url('/images/zigzag_bcg.png') bottom center no-repeat;
+  background: lighten($color-primary, 20%) url('/images/zigzag_bcg.png') bottom center no-repeat;
 }
 
 #business-box {
@@ -61,7 +61,7 @@
 }
 
 #customer-button {
-  background: $color-customer;
+  background: $color-primary;
 }
 
 #business-button {
@@ -69,7 +69,7 @@
 }
 
 .login-form {
-  margin: 0 45px;
+  margin: 0 35px;
   padding: 25px;
   text-align: left;
   display: block;

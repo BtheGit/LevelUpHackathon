@@ -1,6 +1,6 @@
 #mystores-view {
   padding: 25px;
-  background: #EFF2F4; }
+  background: #eef2f5; }
 
 .store-card {
   background: #fff;
@@ -19,15 +19,15 @@
     float: left;
     margin-right: 5px; }
   .store-card .count-circle {
-    top: -5px;
-    right: -5px;
+    bottom: 7px;
+    right: 7px;
     position: absolute;
     text-align: center;
     line-height: 30px;
-    background: #2BB673;
+    background: #f1824d;
     color: #fff;
     border-radius: 50%;
-    padding: 5px;
+    padding: 2px;
     font-size: 11px;
     width: 30px;
     height: 30px; }
@@ -43,8 +43,5 @@
       height: 100%; }
   .store-card .stamp-icon.empty {
     opacity: 0.2; }
-  .Brand_Logo{
-    width: 32px;
-    height: 32px; 
-  }
+
 /*# sourceMappingURL=mystores.css.map */

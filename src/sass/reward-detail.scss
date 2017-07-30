@@ -2,10 +2,14 @@
 
 #reward-detail {
   padding: 0 25px 50px;
-  background: $color-primary;
+  background: $color-bcg;
   img.profile {
     margin: 20px auto;
     border-radius: 4px;
+    width: 100%;
+  }
+
+  .pure-button {
     width: 100%;
   }
 

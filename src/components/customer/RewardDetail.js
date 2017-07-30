@@ -18,41 +18,6 @@ class RewardDetail extends Component {
 		}
 	}
 
-	makeIconsStamps = (stamps, stampsIcon) => {
-		const stampsCurrent = stamps[0];
-		const stampsMax = stamps[1];
-		let icon = null;
-
-		switch (stampsIcon) {
-			case 'coffee':
-				icon = (<ReactSVG path="/images/stamp_coffee.svg"/>);
-				break;
-			case 'tea':
-				icon = (<ReactSVG path="/images/stamp_tea.svg"/>);
-				break;
-			default :
-				icon = '#';
-		}
-
-		return Array(stampsMax).fill().map((stamp, index) => {
-			if (index >= stampsCurrent) {
-				return (
-					<span key={index} className="stamp-icon empty">
-						{icon}
-					</span>
-				);
-			} else {
-				return (
-					<span key={index} className="stamp-icon">
-						{icon}
-					</span>
-				);
-			}
-		});
-	}
-
-
-
 	renderReward = () => {
 		return (
 			<div id="reward-detail" className="full-height-parent">
@@ -63,7 +28,7 @@ class RewardDetail extends Component {
 					<p>{this.props.earned} / {this.props.required}</p>
 					<IconStamps stamps={[this.props.earned, this.props.required]} stampsIcon={this.props.stampIcon} />
 				</div>
-				<div onClick={() => this.setState({display: STORE})} className="pure-button pure-button-primary">Store</div>
+				<div onClick={() => this.setState({display: STORE})} className="pure-button pure-button-primary">Exchange</div>
 			</div>
 		)
 	}

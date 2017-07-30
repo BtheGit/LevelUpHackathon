@@ -1,12 +1,11 @@
 @import './variables.scss';
 
 #qr-container {
-  height: 60%;
-  background: $color-primary url('/images/zigzag_bcg.png') bottom center no-repeat;
+  height: 100%;
   #qr-code {
     width: 200px;
     margin: 0 auto;
-    background: $color-customer;
+    background: $color-primary;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -23,6 +22,7 @@
 }
 
 #customer-view {
+  background: $color-bcg;
   .button-circle {
     border-radius: 50%;
     width: 60px;
